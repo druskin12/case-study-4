@@ -29,6 +29,7 @@ for i = 1:5
     ThetaX = VariousThetaX(i);
     rays_in(:, i) = [x1; ThetaX; y1; ThetaY];
     rays_out(:, i) = Md*rays_in(:, i);
+    rays_out(:, i) = Mf*rays
 end
 
 ray_z = [zeros(1, size(rays_in, 2)); d*ones(1, size(rays_in, 2))];
