@@ -48,13 +48,11 @@ Md = [1, d, 0, 0;
       0, 0, 1, d; 
       0, 0, 0, 1];
 rays_out = zeros(size(rays));
-VariousThetaX = [-pi/20, -pi/40, 0, pi/40, pi/20];
 for i = 1:5
-    ThetaX = VariousThetaX(i);
     rays_out(:, i) = Md*rays(:, i);
 end
 
 figure;
-[img,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 300);
+[img2,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
-imshow(img);
+imshow(img2);
