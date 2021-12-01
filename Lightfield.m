@@ -48,7 +48,7 @@ Md = [1, d, 0, 0;
       0, 0, 1, d; 
       0, 0, 0, 1];
 rays_out = zeros(size(rays));
-for i = 1:5
+for i = 1:size(rays, 2)
     rays_out(:, i) = Md*rays(:, i);
 end
 
