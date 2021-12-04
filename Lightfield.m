@@ -57,3 +57,4 @@ figure;
 [img2,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
 imshow(img2);
+title('Propgation of d = 200 m with 5 mm sensor width, 200 pixels');
