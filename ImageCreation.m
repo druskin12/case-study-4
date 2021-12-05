@@ -31,7 +31,7 @@ figure();
 [img,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
 imshow(img);
-title(['d2 = ', num2str(d2), 'm, f = 0.1 m']);
+title(['Image after lens and propogation, d2 = ', num2str(d2), 'm, f = 0.1 m']);
 end
 
 for f = linspace(f_lower, f_upper, numFrames)
@@ -56,7 +56,7 @@ figure();
 [img,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
 imshow(img);
-title(['f = ', num2str(f), 'm, d2 = 0.2 m']);
+title(['Image after lens and propogation, f = ', num2str(f), 'm, d2 = 0.2 m']);
 end
 
 %%
@@ -82,8 +82,9 @@ figure();
 [img,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
 imshow(img);
-title(['f = ', num2str(f), 'm, d2 = 0.2 m']);
-
+title(['Final Image, f = ', num2str(f), 'm, d2 = 0.2 m']);
+ax = gca;
+ax.FontSize = 15;
 max(rays(1, :))
 min(rays(1, :))
 max(rays(3, :))
