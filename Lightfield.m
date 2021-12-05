@@ -10,6 +10,8 @@ subplot(2, 3, 1);
 colormap(gray);
 imshow(img);
 title('5 mm width, 200 pixels (Original)');
+ax = gca;
+ax.FontSize = 20;
 
 % Increase sensor width to 10e-3.
 subplot(2, 3, 2);
@@ -17,6 +19,8 @@ subplot(2, 3, 2);
 colormap(gray);
 imshow(img);
 title('10 mm width, 200 pixels');
+ax = gca;
+ax.FontSize = 20;
 
 % Decrease sensor width to 1e-3.
 subplot(2, 3, 3);
@@ -24,6 +28,8 @@ subplot(2, 3, 3);
 colormap(gray);
 imshow(img);
 title('1 mm width, 200 pixels');
+ax = gca;
+ax.FontSize = 20;
 
 % Increase number of sensor pixels to 300.
 subplot(2, 3, 4);
@@ -31,6 +37,8 @@ subplot(2, 3, 4);
 colormap(gray);
 imshow(img);
 title('5 mm width, 300 pixels');
+ax = gca;
+ax.FontSize = 20;
 
 % Decrease number of sensor pixels to 100.
 subplot(2, 3, 5);
@@ -38,6 +46,8 @@ subplot(2, 3, 5);
 colormap(gray);
 imshow(img);
 title('5 mm width, 100 pixels');
+ax = gca;
+ax.FontSize = 20;
 
 % Prof Ching said that if it's not sharp, we'll know it's not sharp. Also
 % it doesn't have to be sharp, but we should explore a lot of the values
@@ -58,3 +68,5 @@ figure;
 colormap(gray);
 imshow(img2);
 title('Propgation of d = 200 m with 5 mm sensor width, 200 pixels');
+ax = gca;
+ax.FontSize = 20;

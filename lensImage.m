@@ -80,3 +80,5 @@ title('Ray Tracing');
 ylabel('x (m)');
 xlabel('z (m)');
 
+ax = gca;
+ax.FontSize = 24;
