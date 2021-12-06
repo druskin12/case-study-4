@@ -44,6 +44,7 @@ for i = 1:5
 end
 
 ray_z = [zeros(1, size(rays_in, 2)); d1*ones(1, size(rays_in, 2))];
+figure;
 hold on;
 plot(ray_z, [rays_in(1, :); rays_out(1, :)], 'Color',[0,0,1]);
 ray_z = [zeros(1, size(rays_in, 2)); d2*ones(1, size(rays_in, 2))];
@@ -126,6 +127,7 @@ for i = 1:5
 end
 
 ray_z = [zeros(1, size(rays_in, 2)); d1*ones(1, size(rays_in, 2))];
+figure;
 hold on;
 plot(ray_z, [rays_in(1, :); rays_out(1, :)], 'Color',[0,0,1]);
 ray_z = [zeros(1, size(rays_in, 2)); d2*ones(1, size(rays_in, 2))];
@@ -158,7 +160,7 @@ ray_z = [zeros(1, size(rays_in, 2)); d2*ones(1, size(rays_in, 2))];
 plot(ray_z + .2, [rays_out(1, :); rays_out2(1, :)], 'Color', [0,1,0]);
 
 hold off;
-title('Ray Tracing');
+title('Ray tracing through a lens, d2 = 100 mm, f = 67 mm');
 ylabel('x (m)');
 xlabel('z (m)');
 
@@ -208,6 +210,7 @@ for i = 1:5
 end
 
 ray_z = [zeros(1, size(rays_in, 2)); d1*ones(1, size(rays_in, 2))];
+figure;
 hold on;
 plot(ray_z, [rays_in(1, :); rays_out(1, :)], 'Color',[0,0,1]);
 ray_z = [zeros(1, size(rays_in, 2)); d2*ones(1, size(rays_in, 2))];
@@ -240,7 +243,7 @@ ray_z = [zeros(1, size(rays_in, 2)); d2*ones(1, size(rays_in, 2))];
 plot(ray_z + .2, [rays_out(1, :); rays_out2(1, :)], 'Color', [0,1,0]);
 
 hold off;
-title('Ray Tracing');
+title('Ray tracing through a lens, d2 = 300 mm, f = 120 mm');
 ylabel('x (m)');
 xlabel('z (m)');
 
