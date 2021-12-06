@@ -12,9 +12,9 @@ figure;
 [img,x,y] = rays2img(rays_out(1, :), rays_out(3, :), 5e-3, 200);
 colormap(gray);
 imshow(img);
-title('Image after Reverse Propagation');
+title('Image after Reverse Propa');
 ax = gca;
-ax.FontSize = 5;
+ax.FontSize = 10;
 
 max(rays(1, :))
 min(rays(1, :))
