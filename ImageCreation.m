@@ -85,12 +85,6 @@ imshow(img);
 title(['Final Image, f = ', num2str(f), 'm, d2 = 0.2 m']);
 ax = gca;
 ax.FontSize = 15;
-max(rays(1, :))
-min(rays(1, :))
-max(rays(3, :))
-min(rays(3, :))
 
-max(rays_out(1, :))
-min(rays_out(1, :))
-max(rays_out(3, :))
-min(rays_out(3, :))
+width = max(rays_out(1, :)) - min(rays_out(1, :));
+height = max(rays_out(3, :)) - min(rays_out(3, :));
